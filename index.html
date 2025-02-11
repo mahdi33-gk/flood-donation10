@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donatio</title>
+    <title>Donation</title>
+    <!-- tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/288dc013f9.js" crossorigin="anonymous"></script>
+
+    <!-- custom  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                        secondary: 'rgb(249, 247, 243)',
+                        footerColor: 'rgb(3, 7, 18)',
+                        coupleColor: 'rgb(247, 140, 156)',
+                        new15Color: 'rgb(255, 191, 15)',
+                        primaryBg: 'rgba(29, 209, 0, 0.1)',
+                        grayColor: 'rgba(3, 7, 18, 0.6)',
+                        paribahanBg: 'rgb(247, 248, 248)',
+                        btnBg: 'rgba(3, 7, 18, 0.05)',
+                        textCl: 'rgba(3, 7, 18, 0.5)',
+                        footertextCl: 'rgba(255, 255, 255, 0.7)',
+                        modalColor: 'rgb(39, 174, 96)',
+
+                    },
+                    fontFamily: {
+                        railway: 'Raleway',
+                        inter: 'Inter',
+                        roboto: 'Roboto'
+                    },
+                },
+            },
+
+        }
+    </script>
 </head>
 <body>
     <main>
