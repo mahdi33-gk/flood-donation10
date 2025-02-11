@@ -65,7 +65,7 @@
 
           <div class="flex gap-2">
             <img class="border-dashed border-2" src="./images/coin.png" alt="">
-            <p class="text-[20px]"><span class="mr-1 ">5500</span>BDT</p>
+            <p class="text-[20px]"><span id="main-balance" class="mr-1 ">5500</span>BDT</p>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
             <div>
               <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
                 <img src="./images/coin.png" alt="">
-                <p> <span class="mr-1">0</span>BDT</p>
+                <p> <span id="balance1" class="mr-1">0</span>BDT</p>
               </div>
             </div>
             <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -102,9 +102,9 @@
               Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and
               making a positive impact on the lives of those in need.</p>
             <div class="card-actions ">
-              <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text"
+              <input id="balanceInput" class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text"
                 placeholder="Write Donation Amount">
-              <button onclick="my_modal_5.showModal()" class="btn  w-full bg-primary">Donate Now</button>
+              <button onclick="my_modal_5.showModal()" id="balance-btn" class="btn  w-full bg-primary">Donate Now</button>
 
               <!-- Open the modal using ID.showModal() method -->
               <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -135,7 +135,7 @@
             <div>
               <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
                 <img src="./images/coin.png" alt="">
-                <p> <span class="mr-1">0</span>BDT</p>
+                <p> <span id="balance2" class="mr-1">0</span>BDT</p>
               </div>
             </div>
             <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -145,9 +145,9 @@
               rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
               difference. Please consider donating today to assist those in urgent need.</p>
             <div class="card-actions ">
-              <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text"
+              <input id="balance2Input" class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text"
                 placeholder="Write Donation Amount">
-              <button onclick="my_modal_6.showModal()" class="btn  w-full bg-primary">Donate Now</button>
+              <button onclick="my_modal_6.showModal()" id="balance2-btn" class="btn  w-full bg-primary">Donate Now</button>
 
               <!-- Open the modal using ID.showModal() method -->
               <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
@@ -178,7 +178,7 @@
             <div>
               <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
                 <img src="./images/coin.png" alt="">
-                <p> <span class="mr-1">0</span>BDT</p>
+                <p> <span id="balance3" class="mr-1">0</span>BDT</p>
               </div>
             </div>
             <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
@@ -189,9 +189,9 @@
               alleviating their suffering and aiding in their recovery. Please consider making a donation to support
               these brave individuals in their time of need.</p>
             <div class="card-actions ">
-              <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text"
+              <input id="balance3Input" class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text"
                 placeholder="Write Donation Amount">
-              <button onclick="my_modal_7.showModal()" class="btn  w-full bg-primary">Donate Now</button>
+              <button onclick="my_modal_7.showModal()" id="balance3-btn" class="btn  w-full bg-primary">Donate Now</button>
 
               <!-- Open the modal using ID.showModal() method -->
               <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
@@ -217,8 +217,8 @@
     <!-- card sectionn end -->
   </main>
 
-  <script src="script.js"></script>
-  <script src="commonFunction.js"></script>
+  <script src="./script.js"></script>
+  <script src="./commonFunction.js"></script>
 
 
   <!-- footer -->
