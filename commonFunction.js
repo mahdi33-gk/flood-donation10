@@ -4,8 +4,8 @@ function getInput(id) {
 }
 
 function getInnerText(id) {
-  const getInnerText = parseFloat(document.getElementById(id).innerText);
-  return getInnerText;
+  const getInerText = parseFloat(document.getElementById(id).innerText);
+  return getInerText;
 }
 
 function masterPiece(donationAmmount, cardBalance, mainBalance, btnClick) {
@@ -18,7 +18,7 @@ function masterPiece(donationAmmount, cardBalance, mainBalance, btnClick) {
     const newCardBalance = cardOldBalance + inputDonationAmmount;
     document.getElementById(cardBalance).innerText = newCardBalance;
 
-    const newMainbalance = oldBalance + inputDonationAmmount;
+    const newMainbalance = oldBalance - inputDonationAmmount;
     document.getElementById(mainBalance).innerText = newMainbalance;
   });
 }
