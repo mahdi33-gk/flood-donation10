@@ -11,6 +11,11 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/288dc013f9.js" crossorigin="anonymous"></script>
 
+    <!-- googleFont  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- custom  -->
     <script>
         tailwind.config = {
@@ -19,22 +24,17 @@
                     colors: {
                         primary: 'rgb(180, 244, 97)',
                         secondary: 'rgb(249, 247, 243)',
-                        footerColor: 'rgb(3, 7, 18)',
-                        coupleColor: 'rgb(247, 140, 156)',
-                        new15Color: 'rgb(255, 191, 15)',
-                        primaryBg: 'rgba(29, 209, 0, 0.1)',
-                        grayColor: 'rgba(3, 7, 18, 0.6)',
-                        paribahanBg: 'rgb(247, 248, 248)',
-                        btnBg: 'rgba(3, 7, 18, 0.05)',
-                        textCl: 'rgba(3, 7, 18, 0.5)',
-                        footertextCl: 'rgba(255, 255, 255, 0.7)',
-                        modalColor: 'rgb(39, 174, 96)',
-
+                        littleBg: 'rgba(17, 17, 17, 0.05)',
+                        textCl: 'rgba(17, 17, 17, 0.7)',
+                        borderCl: 'rgba(17, 17, 17, 0.1)',
+                        
+                        
+                       
                     },
                     fontFamily: {
-                        railway: 'Raleway',
+                        lexend: 'Lexend',
                         inter: 'Inter',
-                        roboto: 'Roboto'
+                        roboto: 'Roboto',
                     },
                 },
             },
@@ -42,9 +42,135 @@
         }
     </script>
 </head>
-<body>
-    <main>
+<body class="font-lexend">
+    <main  class="pt-20">
+        <header class="bg-secondary pb-5 top-0 w-full z-50 fixed">
+            <nav class=" w-10/12 mx-auto pt-2 ">
+                <div class="navbar  flex justify-between items-center">
+                    
+                    <div class="">
+                        <a class="btn bg-primary px-5">Button</a>
+                      </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <div class="flex gap-2 justify-center items-center">
+                        <img class="border-2 border-dashed" src="./images/logo.png" alt="">
+                        <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
+                      </div>
+                    </div>
+                    <div class="">
+                      
+                        <a class="btn btn-ghost text-xl">daisyUI</a>
+                      </div>
+                  </div>
+            </nav>
+        </header>
 
+        <!-- btn section start -->
+         <div class="mt-8 pb-5 mb-5 flex gap-4 w-10/12 mx-auto justify-center items-center">
+            <button class="btn px-7 btn-lg bg-primary font-normal text-2xl">Donation</button>
+            <button class="btn px-7 btn-lg border-textCl text-textCl text-2xl  font-normal">History</button>
+         </div>
+        <!-- btn section end -->
+
+        <!-- card sectionn start -->
+         <section >
+            <!-- first card -->
+            <div class="w-10/12 mx-auto">
+                <div class="card border-borderCl border-2 p-3 lg:card-side bg-base-100 shadow-sm mb-6">
+                      <img class="p-3"
+                        src="./images/noakhali.png"
+                        alt="Album" />
+                    <div class="card-body">
+
+                        <div>
+                            <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
+                                <img src="./images/coin.png" alt="">
+                                <p> <span class="mr-1">0</span>BDT</p>
+                            </div>
+                        </div>
+                      <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                      <p class="text-textCl"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                      <div class="card-actions ">
+                        <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text" placeholder="Write Donation Amount">
+                        <button class="btn  w-full bg-primary">Donate Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- second card -->
+            <div class="w-10/12 mx-auto">
+                <div class="card border-borderCl border-2 p-3 lg:card-side bg-base-100 shadow-sm mb-6">
+                      <img class="p-3"
+                        src="./images/feni.png"
+                        alt="Album" />
+                    <div class="card-body">
+
+                        <div>
+                            <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
+                                <img src="./images/coin.png" alt="">
+                                <p> <span class="mr-1">0</span>BDT</p>
+                            </div>
+                        </div>
+                      <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                      <p class="text-textCl">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                      <div class="card-actions ">
+                        <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text" placeholder="Write Donation Amount">
+                        <button class="btn  w-full bg-primary">Donate Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- third card -->
+            <div class="w-10/12 mx-auto">
+                <div class="card border-borderCl border-2 p-3 lg:card-side bg-base-100 shadow-sm mb-6">
+                      <img class="p-3"
+                        src="./images/quota-protest.png"
+                        alt="Album" />
+                    <div class="card-body">
+
+                        <div>
+                            <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
+                                <img src="./images/coin.png" alt="">
+                                <p> <span class="mr-1">0</span>BDT</p>
+                            </div>
+                        </div>
+                      <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                      <p class="text-textCl">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                      <div class="card-actions ">
+                        <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text" placeholder="Write Donation Amount">
+                        <button class="btn  w-full bg-primary">Donate Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- fourth card -->
+            <div class="w-10/12 mx-auto">
+                <div class="card border-borderCl border-2 p-3 lg:card-side bg-base-100 shadow-sm mb-6">
+                      <img class="p-3"
+                        src="./images/noakhali.png"
+                        alt="Album" />
+                    <div class="card-body">
+
+                        <div>
+                            <div class="inline-flex px-3 py-2 rounded-md items-center gap-1 bg-littleBg">
+                                <img src="./images/coin.png" alt="">
+                                <p> <span class="mr-1">0</span>BDT</p>
+                            </div>
+                        </div>
+                      <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                      <p class="text-textCl"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                      <div class="card-actions ">
+                        <input class="w-full mb-2 border-2 border-borderCl px-3 rounded-lg py-3" type="text" placeholder="Write Donation Amount">
+                        <button class="btn  w-full bg-primary">Donate Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         </section>
+        <!-- card sectionn end -->
     </main>
 
     <script src="script.js"></script>
