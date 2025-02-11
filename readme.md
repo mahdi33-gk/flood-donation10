@@ -2,7 +2,7 @@
 
 ## <img width=30px src="images/logo.png"/> DONATE BANGLADESH
 
-<img  src="./images/Bonus-Modal Idea.png"/>
+<img  src="./Bonus-Modal Idea.png"/>
 
 <br>
 <img  src="./Donation-page.png"/>
