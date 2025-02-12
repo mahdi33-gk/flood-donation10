@@ -24,18 +24,20 @@ document
 
     everyhistory.innerHTML = `
       <div  class="p-3">
-        <h1 class="text-2xl">${inputDonationAmmount}tk Donated for ${title.innerText}</h1>
-        <p>Today Time</p>
+        <h1 class="text-xl"> <span class="font-semibold text-2xl">${inputDonationAmmount} tk</span>  Donated for ${title.innerText}</h1>
+        <p class="pt-1 pb-1">Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
       </div>
-    `
+    `;
   });
 
 //   feni
 document.getElementById("balance2-btn").addEventListener("click", function () {
   const oldBalance = getInnerText("main-balance");
   const cardOldBalance = getInnerText("balance2");
+  const everyhistory = document.getElementById('every-histry');
   const inputDonationAmmount = getInput("balance2Input");
   const clickBtn = document.getElementById("balance2-btn");
+  const title = document.getElementById('feni-title');
 
   if (isNaN(inputDonationAmmount) || inputDonationAmmount <0) {
     document.getElementById("balance2-btn").removeAttribute("onclick");
@@ -49,14 +51,24 @@ document.getElementById("balance2-btn").addEventListener("click", function () {
   document.getElementById("main-balance").innerText = newMainbalance;
 
   document.getElementById("balance2Input").value = "";
+
+  everyhistory.innerHTML = `
+      <div  class="p-3">
+        <h1 class="text-xl"> <span class="font-semibold text-2xl">${inputDonationAmmount} tk</span>  Donated for ${title.innerText}</h1>
+        <p class="pt-1 pb-1">Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
+      </div>
+    `;
 });
 
 //   quata
 document.getElementById("balance3-btn").addEventListener("click", function () {
   const oldBalance = getInnerText("main-balance");
   const cardOldBalance = getInnerText("balance3");
+  const everyhistory = document.getElementById('every-histry');
   const inputDonationAmmount = getInput("balance3Input");
   const clickBtn = document.getElementById("balance3-btn");
+  const title = document.getElementById('quata-title');
+  
 
   if (isNaN(inputDonationAmmount) || inputDonationAmmount <0) {
     document.getElementById("balance3-btn").removeAttribute("onclick");
@@ -69,7 +81,15 @@ document.getElementById("balance3-btn").addEventListener("click", function () {
     document.getElementById("main-balance").innerText = newMainbalance;
 
     document.getElementById("balance3Input").value = "";
+
+    everyhistory.innerHTML = `
+      <div  class="p-3">
+        <h1 class="text-xl"> <span class="font-semibold text-2xl">${inputDonationAmmount} tk</span>  Donated for ${title.innerText}</h1>
+        <p class="pt-1 pb-1">Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
+      </div>
+    `;
   }
+
 });
 
 
