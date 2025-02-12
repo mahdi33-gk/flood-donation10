@@ -22,12 +22,16 @@ document
 
     document.getElementById("noakhali-balanceInput").value = "";
 
-    everyhistory.innerHTML = `
-      <div  class="p-3">
+    const eachHistory = document.createElement('div');
+    eachHistory.className = 'p-3  border-borderCl rounded-md mt-3 mb-3 border-2';
+
+    eachHistory.innerHTML = `
+      <div  class="p-3 px-6">
         <h1 class="text-xl"> <span class="font-semibold text-2xl">${inputDonationAmmount} tk</span>  Donated for ${title.innerText}</h1>
         <p class="pt-1 pb-1">Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
       </div>
     `;
+    everyhistory.append(eachHistory);
   });
 
 //   feni
@@ -52,12 +56,18 @@ document.getElementById("balance2-btn").addEventListener("click", function () {
 
   document.getElementById("balance2Input").value = "";
 
-  everyhistory.innerHTML = `
-      <div  class="p-3">
+
+
+  const eachHistory = document.createElement('div');
+    eachHistory.className = 'p-3  border-borderCl rounded-md mt-3 mb-3 border-2';
+
+    eachHistory.innerHTML = `
+      <div  class="p-3 px-6">
         <h1 class="text-xl"> <span class="font-semibold text-2xl">${inputDonationAmmount} tk</span>  Donated for ${title.innerText}</h1>
         <p class="pt-1 pb-1">Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
       </div>
     `;
+    everyhistory.append(eachHistory);
 });
 
 //   quata
@@ -82,12 +92,16 @@ document.getElementById("balance3-btn").addEventListener("click", function () {
 
     document.getElementById("balance3Input").value = "";
 
-    everyhistory.innerHTML = `
-      <div  class="p-3">
+    const eachHistory = document.createElement('div');
+    eachHistory.className = 'p-3  border-borderCl rounded-md mt-3 mb-3 border-2';
+
+    eachHistory.innerHTML = `
+      <div  class="p-3 px-6">
         <h1 class="text-xl"> <span class="font-semibold text-2xl">${inputDonationAmmount} tk</span>  Donated for ${title.innerText}</h1>
         <p class="pt-1 pb-1">Date: ${new Date().toLocaleDateString()} (Bangladesh Standard Time)</p>
       </div>
     `;
+    everyhistory.append(eachHistory);
   }
 
 });
@@ -96,21 +110,34 @@ document.getElementById("balance3-btn").addEventListener("click", function () {
 // history btn
 document.getElementById('history').addEventListener('click', function(event){
     const donationBtn = document.getElementById('donation');
-    const historySec = document.getElementById('card-section');
-    const donationPage = document.getElementById('history-section');
-    this.classList.add('btn', 'px-7', 'btn-lg', 'bg-primary', 'font-normal', 'border-transparent', 'text-2xl');
-    donationPage.classList.remove('hidden');
-    donationBtn.classList.remove('bg-primary');
+    const historySec = document.getElementById('history-section');
+    const historyBtn = document.getElementById('history');
+    const donationPage = document.getElementById('card-section');
+    historyBtn.classList.add('btn', 'px-7', 'btn-lg', 'bg-primary', 'font-normal', 'border-transparent');
+
+    historySec.classList.remove('hidden');
+    donationPage.classList.add('hidden');
+
+    donationBtn.classList.remove('bg-primary', 'border-transparent');
     donationBtn.classList.add('border-textCl');
-    historySec.classList.add('hidden');
+    
+    historyBtn.classList.remove('border-textCl');
 
 });
 
 // donationBtn
 document.getElementById('donation').addEventListener('click', function(event){
   const donationPage = document.getElementById('history-section');
+  const donationBtn = document.getElementById('donation');
   const historySec = document.getElementById('card-section');
-   
+  const historyBtn = document.getElementById('history');
+  donationBtn.classList.add('bg-primary', 'border-transparent', 'btn', 'btn-lg', 'px-7', 'font-normal');
+  historySec.classList.add('hidden');
+  donationPage.classList.remove('hidden');
+
+  historyBtn.classList.remove('bg-primary','border-transparent');
+  historyBtn.classList.add('border-textCl');
+  
 });
 
 
