@@ -5,6 +5,8 @@ document
     const cardOldBalance = getInnerText("noakhali-balance");
     const inputDonationAmmount = getInput("noakhali-balanceInput");
     const clickBtn = document.getElementById("noakhali-balance-btn");
+    const everyhistory = document.getElementById('every-histry');
+    const title = document.getElementById('Noakhali');
 
     if (isNaN(inputDonationAmmount) || inputDonationAmmount <0) {
         
@@ -19,6 +21,13 @@ document
     document.getElementById("main-balance").innerText = newMainbalance;
 
     document.getElementById("noakhali-balanceInput").value = "";
+
+    everyhistory.innerHTML = `
+      <div  class="p-3">
+        <h1 class="text-2xl">${inputDonationAmmount}tk Donated for ${title.innerText}</h1>
+        <p>Today Time</p>
+      </div>
+    `
   });
 
 //   feni
@@ -67,14 +76,25 @@ document.getElementById("balance3-btn").addEventListener("click", function () {
 // history btn
 document.getElementById('history').addEventListener('click', function(event){
     const donationBtn = document.getElementById('donation');
+    const historySec = document.getElementById('card-section');
+    const donationPage = document.getElementById('history-section');
     this.classList.add('btn', 'px-7', 'btn-lg', 'bg-primary', 'font-normal', 'border-transparent', 'text-2xl');
+    donationPage.classList.remove('hidden');
     donationBtn.classList.remove('bg-primary');
-    donationBtn.classList.add('border-textCl')
+    donationBtn.classList.add('border-textCl');
+    historySec.classList.add('hidden');
+
 });
 
 // donationBtn
 document.getElementById('donation').addEventListener('click', function(event){
-    window.location.reload();
-})
+  const donationPage = document.getElementById('history-section');
+  const historySec = document.getElementById('card-section');
+   
+});
 
 
+
+
+// history section for ery cards
+document.getElementById('noakhali-balance-btn')
