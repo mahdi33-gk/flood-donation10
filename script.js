@@ -1,1 +1,1 @@
-masterPiece("balanceInput", "balance1", "main-balance", "balance-btn");
+masterPiece("noakhali-balanceInput", "noakhali-balance", "main-balance", "noakhali-balance-btns");
