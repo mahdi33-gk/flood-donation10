@@ -32,6 +32,9 @@ document
       </div>
     `;
     everyhistory.append(eachHistory);
+
+    const noHistoryTile = document.getElementById('no-history');
+    noHistoryTile.classList.add('hidden');
   });
 
 //   feni
@@ -68,6 +71,10 @@ document.getElementById("balance2-btn").addEventListener("click", function () {
       </div>
     `;
     everyhistory.append(eachHistory);
+    
+
+    const noHistoryTile = document.getElementById('no-history');
+    noHistoryTile.classList.add('hidden');
 });
 
 //   quata
@@ -102,6 +109,8 @@ document.getElementById("balance3-btn").addEventListener("click", function () {
       </div>
     `;
     everyhistory.append(eachHistory);
+    const noHistoryTile = document.getElementById('no-history');
+    noHistoryTile.classList.add('hidden');
   }
 
 });
@@ -127,13 +136,14 @@ document.getElementById('history').addEventListener('click', function(event){
 
 // donationBtn
 document.getElementById('donation').addEventListener('click', function(event){
-  const donationPage = document.getElementById('history-section');
+  const historySec = document.getElementById('history-section');
+  const donationPage = document.getElementById('card-section');
   const donationBtn = document.getElementById('donation');
-  const historySec = document.getElementById('card-section');
   const historyBtn = document.getElementById('history');
   donationBtn.classList.add('bg-primary', 'border-transparent', 'btn', 'btn-lg', 'px-7', 'font-normal');
-  historySec.classList.add('hidden');
+
   donationPage.classList.remove('hidden');
+  historySec.classList.add('hidden');
 
   historyBtn.classList.remove('bg-primary','border-transparent');
   historyBtn.classList.add('border-textCl');
@@ -143,5 +153,4 @@ document.getElementById('donation').addEventListener('click', function(event){
 
 
 
-// history section for ery cards
-document.getElementById('noakhali-balance-btn')
+
