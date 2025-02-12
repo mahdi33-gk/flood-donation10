@@ -62,3 +62,19 @@ document.getElementById("balance3-btn").addEventListener("click", function () {
     document.getElementById("balance3Input").value = "";
   }
 });
+
+
+// history btn
+document.getElementById('history').addEventListener('click', function(event){
+    const donationBtn = document.getElementById('donation');
+    this.classList.add('btn', 'px-7', 'btn-lg', 'bg-primary', 'font-normal', 'border-transparent', 'text-2xl');
+    donationBtn.classList.remove('bg-primary');
+    donationBtn.classList.add('border-textCl')
+});
+
+// donationBtn
+document.getElementById('donation').addEventListener('click', function(event){
+    window.location.reload();
+})
+
+
